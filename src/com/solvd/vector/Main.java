@@ -1,6 +1,8 @@
 package com.solvd.vector;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author asemenkov
@@ -23,6 +25,23 @@ public class Main {
 
         double cos = v1.getCosAngle(v2);
         double scalar = v2.getScalarProduct(v1);
+
+        Random random = new Random(0);
+        List<TriCoordVector> vectors = VectorFunctionalUtils.generate(10, random::nextInt);
+
+        Comparator<Vector> vectorComparator = (a, b) -> {
+            if(a.getLength()< b.getLength())
+                return -1;
+            if  (a.getLength() > b.getLength())
+                return 1;
+            if
+            (a.getLength() == b.getLength())
+                return 0;
+
+            return 0;
+        };
+
+
     }
 
 }
