@@ -77,6 +77,8 @@ public class Main {
 //        	System.out.println(listOfVectors.get(i).getLength() + "," + listOfVectors.get(i).getScalarProduct(listOfVectors.get(i)) + "," + vectors.get(i).getCosAngle(listOfVectors.get(i)));   	
 //        }
         
+        //20:20
+        
 
     }
 
